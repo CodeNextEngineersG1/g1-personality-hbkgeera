@@ -6,3 +6,27 @@ html {
 }
 
 /* Place your styles below */
+header{
+  text-align:center;
+}
+main{
+  text-align: center;
+}
+#try-again, #form-submit{
+  margin: 10px auto 10px auto;
+  width:200px;
+  height:50px;
+}
+#try-again{
+  display: none;
+}
+
+#quiz-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.question{
+  
+}
