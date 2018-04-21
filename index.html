@@ -3,47 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h1>What footbal player are you??🤔</h1>
+      <h1 id="page-title">What footbal player are you??🤔</h1>
     </header>
     <main>
       <button id="try-again">try again</button>
       <div id="quiz-wrapper">
         <div class="question">
           <h2> What is the best position?</h2>
+          <div>
           <input type="radio" name="position" id="GK">
           <label for="GK">GK</label>
           <input type="radio" name="position" id="Forward">
             <label for="Forward">Forward</label>
+          </div>
+          <div>
           <input type="radio" name="position" id="midfielder">
             <label for="midfielder">midfielder</label>
           <input type="radio" name="position" id="Defender">
           <label for="Defender">Defender</label>
+        </div>
 
         </div>
         <div class="question">
           <h2> Who has the best kick posture?</h2>
+          <div>
           <input type="radio" name="posture" id="Ronaldo">
           <label for="Ronaldo">Ronaldo</label>
           <input type="radio" name="posture" id="De-Gea">
           <label for="De-Gea">De-Gea</label>
+        </div>
+        <div>
           <input type="radio" name="posture" id="Marcelo">
           <label for="Marcelo">Marcelo</label>
           <input type="radio" name="posture" id="Isco">
           <label for="Isco">Isco</label>
         </div>
+        </div>
         <div class="question">
           <H2>What is your mentality on the pitch? </H2>
+          <div>
           <input type="radio" name="mentality" id="scorer">
           <label for="scorer">Goal scorer</label>
           <input type="radio" name="mentality" id="play-maker">
           <label for="play-maker">Play maker</label>
+        </div>
+        <div>
           <input type="radio" name="mentality" id="Lock-down">
           <label for="Lock-down">Lock down</label>
           <input type="radio" name="mentality" id="Tough">
           <label for="Tough">Tough</label>
+        </div>
        </div>
       </div>
       <button id="form-submit">submit</button>

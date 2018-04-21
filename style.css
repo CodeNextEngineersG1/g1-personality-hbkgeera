@@ -16,6 +16,7 @@ main{
   margin: 10px auto 10px auto;
   width:200px;
   height:50px;
+
 }
 #try-again{
   display: none;
@@ -26,7 +27,10 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  border-style: solid;
+  margin-left: 450px;
+  margin-right: 450px;
 }
 .question{
-  
+
 }
