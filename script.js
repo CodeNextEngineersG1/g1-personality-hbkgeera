@@ -2,6 +2,7 @@
 let position = null;
 let posture = null;
 let mentality = null;
+let personality
 let pageTitle = document.querySelector('h1');
 let pageTitleText = pageTitle.innerHTML;
 let tryAgain = document.querySelector("#try-again"),
@@ -12,8 +13,28 @@ tryAgain.addEventListener("click", resetQuiz);
 formSubmit.addEventListener("click", processResults);
 
 function processResults(){
+  position = document.querySelector('input[name="position"]:checked');
+  posture = document.querySelector('input[name="posture"]:checked');
+  mentality = document.querySelector('input[name="mentality"]:checked');
+if(posture == null || position == null || mentality == null);{
+  alert('answer all the questions brodie!!🤩');
+}else {
+personality = getPersonality();
 
+}
+quizWrapper.style.display = 'none';
+formSubmit.style.display = 'none';
+tryAgain.style.display = 'block';
 
+  if (personality == 1){
+    pageTitleText = "you are de gea!!";
+  }else if(personality == 2){
+    pageTitleText = "you are Ronaldo";
+  }else if (personality == 3) {
+    pageTitleText = " you are isco!!";
+  }else if (personality) {
+    pageTitleText = "you are Marcelo";
+  }
 }
 function getPersonality(){
 let score = 0;
